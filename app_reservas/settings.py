@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'app_reservas.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 # Conexión a la base de datos
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgres://usersena:j6LTWFak6z94POivkic7OM59ZzLnUMJM@dpg-cnitnlvsc6pc73d2kgeg-a.frankfurt-postgres.render.com/reserva_db_6f09',
-        conn_max_age=600
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
+    }
 }
 
 
