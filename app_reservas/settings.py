@@ -29,7 +29,7 @@ DEBUG = True
 # Asegúrate de incluir aquí los hosts desde los cuales esperas solicitudes.
 # En entornos de desarrollo comunes, se incluyen localhost, 127.0.0.1 y 10.0.2.2.
 # En producción, agrega el nombre de host de tu dominio.
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '10.0.2.2']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '10.0.2.2', '0.0.0.0']
 
 
 # Application definition
